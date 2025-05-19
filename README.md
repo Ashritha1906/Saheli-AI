@@ -1,74 +1,88 @@
-# Welcome to your Lovable project
 
-## Project info
+# Saheli - Asha AI Career Companion 🤖💼
 
-**URL**: https://lovable.dev/projects/1ac13d27-8280-439d-895b-ef68d03fd32a
+**Saheli** is an AI-powered chatbot prototype built for the Asha Hackathon 2024. It is designed to support and empower women professionals by providing contextual, real-time assistance in exploring job opportunities, mentorship programs, community events, and career development resources.
 
-## How can I edit this code?
+## 🚀 Project Goals
+- Create a context-aware chatbot that delivers meaningful, multi-turn responses.
+- Integrate real-time job, event, and mentorship data (dummy/dynamic for MVP).
+- Promote inclusivity and ethical AI use by mitigating gender bias in responses.
+- Ensure privacy and data security in all interactions.
 
-There are several ways of editing your application.
+## ✨ Features
+- 💬 **Chatbot Interface**: Powered by Gemini Pro API with context awareness and smart fallback handling.
+- 🔍 **Quick Suggestions**: Buttons like “Find Jobs”, “Explore Mentorship”, and “Upcoming Events” for instant queries.
+- 🗂️ **Job Listings Page**: Browse and filter jobs (from dummy JSON or API).
+- 👥 **Mentorship Program Page**: Explore mentor cards and apply for programs.
+- 📆 **Events Page**: View upcoming events and register.
+- 🧠 **Bias Mitigation**: AI configured to block hate speech, harassment, and explicit content.
+- 📦 **Feedback Form**: Submit support requests or feedback.
+- 📱 **Responsive UI**: Built with React.js + TailwindCSS for a sleek, mobile-first experience.
 
-**Use Lovable**
+## 🛠️ Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1ac13d27-8280-439d-895b-ef68d03fd32a) and start prompting.
+| Layer       | Technology             |
+|-------------|------------------------|
+| Frontend    | React.js, Tailwind CSS |
+| Backend     | Node.js, Express.js    |
+| AI Model    | Google Gemini Pro API  |
+| APIs        | Google Generative Language API |
+| Design Tools| Lovable.dev (UI scaffold)     |
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧪 Setup Instructions
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Frontend Setup
+```bash
+cd client
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Backend Setup
+```bash
+cd server
+npm install
+node server.js
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### API Integration
+- Ensure you have a valid **Gemini API Key** from Google.
+- Add it to your backend `server.js` file:
+```js
+const GEMINI_API_KEY = "YOUR_API_KEY_HERE";
+```
 
-**Use GitHub Codespaces**
+## 🔐 Security & Ethics
+- API key securely hidden on server side.
+- AI safety settings configured to block harmful content.
+- No personal data stored during prototype phase.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📸 Screenshots
+Include:
+- Landing Page
+- Chatbot Interface
+- Job Listings Page
+- Mentorship Explorer
+- Events Page
 
-## What technologies are used for this project?
+## 🎯 Future Enhancements
+- Add login/signup system.
+- Save user profiles & preferences.
+- Admin panel to manage job/event listings.
+- Real-time analytics dashboard.
+- Multilingual support (Hindi, Tamil, etc.).
 
-This project is built with:
+## 📂 Repository Structure
+```
+/client      => React frontend
+/server      => Node.js backend
+README.md    => This file
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📜 License
+This is a prototype submitted for Asha Hackathon 2024. Educational use only.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/1ac13d27-8280-439d-895b-ef68d03fd32a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
-"# decentralized-app" 
+### 💡 Quote:
+_"Saheli bridges the gap between ambition and opportunity — through ethical AI, smart tech, and a friendly voice."_ 🙌
